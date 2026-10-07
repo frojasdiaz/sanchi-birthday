@@ -30,6 +30,16 @@
     .question-card{position:relative;max-width:900px;margin:auto;padding:clamp(25px,6vw,62px);border:1px solid var(--line);border-radius:28px;background:linear-gradient(145deg,rgba(76,32,72,.48),rgba(18,45,53,.28));box-shadow:0 30px 80px rgba(0,0,0,.25)}.question-card h2{font-size:clamp(2.1rem,6vw,4.1rem)}.question{max-width:720px;color:var(--ivory);font:400 clamp(1.15rem,3.3vw,1.55rem)/1.5 Georgia,serif}.choices{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}.choice{border:1px solid rgba(247,239,229,.25);border-radius:999px;padding:12px 17px;background:rgba(255,255,255,.035);color:var(--ivory);cursor:pointer;transition:.25s}.choice:hover,.choice.selected{border-color:var(--gold);background:rgba(232,189,114,.12);transform:translateY(-2px)}.answer{min-height:38px;margin-top:20px;color:var(--gold);font-weight:650}.spark{position:fixed;z-index:100;width:7px;height:12px;border-radius:2px;pointer-events:none;animation:fall 1.4s var(--ease) forwards}@keyframes fall{to{transform:translate(var(--x),var(--y)) rotate(480deg);opacity:0}}
     .letter-section{padding-bottom:120px}.letter{position:relative;max-width:790px;margin:auto;padding:clamp(30px,7vw,75px);border:1px solid rgba(232,189,114,.22);border-radius:4px 34px 4px 34px;background:linear-gradient(145deg,rgba(247,239,229,.075),rgba(207,147,170,.035));box-shadow:0 35px 100px rgba(0,0,0,.3)}.letter:before{content:"";position:absolute;inset:12px;border:1px solid rgba(247,239,229,.07);border-radius:2px 25px 2px 25px;pointer-events:none}.hindi{color:var(--gold);font-size:1.08rem}.letter h2{margin-top:.35rem}.letter p{font-size:1.05rem;line-height:1.85}.signature{margin-top:35px!important;color:var(--ivory)!important;font:italic 1.5rem Georgia,serif!important}.secret{position:absolute;right:18px;bottom:14px;border:0;padding:10px;background:none;color:rgba(247,239,229,.2);cursor:pointer}.toast{position:fixed;z-index:80;left:50%;bottom:22px;max-width:calc(100% - 32px);padding:11px 17px;border:1px solid var(--line);border-radius:999px;background:#21142d;color:var(--ivory);font-size:.82rem;box-shadow:0 12px 40px rgba(0,0,0,.35);transform:translate(-50%,30px);opacity:0;transition:.35s;pointer-events:none}.toast.show{transform:translate(-50%,0);opacity:1}.footer{padding:0 20px 35px;text-align:center;color:#756879;font:500 .7rem ui-monospace,monospace;letter-spacing:.1em}
     @media(max-width:760px){.section{min-height:auto;padding:95px 0}.terminal-section{min-height:100svh}.wish-grid{grid-template-columns:1fr}.constellation{min-height:330px}.landscape{min-height:530px}.scene-label{display:block}.stamp{width:82px;margin-top:24px}.letter-section{padding-bottom:90px}}@media(max-width:420px){.wrap{width:min(100% - 26px,1100px)}.terminal-body{padding-inline:16px}.terminal-title{display:none}.choices{display:grid}.choice{text-align:left}.landscape{border-radius:20px}.route{left:5%;right:4%}}
+    /* Final polish: richer depth, clearer rhythm, and a cinematic travel scene. */
+    body:before{content:"";position:fixed;z-index:0;inset:0;pointer-events:none;background:linear-gradient(115deg,transparent 0 47%,rgba(232,189,114,.018) 48%,transparent 49% 100%);background-size:38px 38px;mask-image:linear-gradient(to bottom,black,transparent 82%)}
+    .intro:before,.intro:after{content:"";position:absolute;left:50%;top:50%;border:1px solid rgba(232,189,114,.13);border-radius:50%;transform:translate(-50%,-50%);pointer-events:none}.intro:before{width:min(82vw,720px);aspect-ratio:1}.intro:after{width:min(66vw,570px);aspect-ratio:1;border-color:rgba(133,201,196,.08)}.intro-inner{position:relative;z-index:1}.intro-inner:before{content:"✦";display:block;margin-bottom:22px;color:var(--gold);font-size:1.1rem;text-shadow:0 0 26px rgba(232,189,114,.85);animation:breathe 2.8s ease-in-out infinite}.run{overflow:hidden}.run:after{content:"";position:absolute;inset:-60% auto -60% -35%;width:28%;background:rgba(255,255,255,.45);transform:rotate(18deg);transition:left .7s var(--ease)}.run:hover:after{left:115%}.scroll-note{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:17px;color:#766a7b;font:600 .64rem ui-monospace,monospace;letter-spacing:.12em;text-transform:uppercase}.scroll-note:before,.scroll-note:after{content:"";width:24px;height:1px;background:rgba(232,189,114,.25)}
+    .terminal{position:relative}.terminal:after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;box-shadow:inset 0 1px rgba(255,255,255,.07)}.terminal-bar{padding-block:15px}.terminal-meta{margin-left:14px;color:#6e6074;font:500 .62rem ui-monospace,monospace;letter-spacing:.1em;text-transform:uppercase}.terminal-body{background:radial-gradient(circle at 82% 5%,rgba(133,201,196,.07),transparent 40%)}
+    .wish-grid{position:relative}.decorative-number{position:absolute;right:0;top:-80px;color:rgba(247,239,229,.035);font:700 8rem/1 Georgia,serif}.constellation{box-shadow:inset 0 0 70px rgba(170,131,186,.08),0 30px 80px rgba(0,0,0,.18)}.orbit{box-shadow:0 0 70px rgba(232,189,114,.05)}
+    .landscape{isolation:isolate;min-height:620px;background:linear-gradient(180deg,rgba(10,7,18,.08),rgba(10,7,18,.16) 35%,rgba(10,7,18,.82) 100%),url('og.png') center/cover no-repeat}.landscape:before{z-index:-1;inset:0;width:auto;height:auto;background:linear-gradient(90deg,rgba(16,11,26,.32),transparent 55%);clip-path:none}.landscape:after{z-index:0;inset:auto 0 0;height:46%;background:linear-gradient(transparent,rgba(9,7,16,.72));box-shadow:none}.moon{display:none}.route{left:11%;right:9%;bottom:28%;border-color:rgba(232,189,114,.72);filter:drop-shadow(0 0 5px rgba(232,189,114,.35))}.scene-label{z-index:4}.scene-label h2{text-shadow:0 4px 35px rgba(0,0,0,.75)}.scene-label h2 em{color:#f0d399;font-weight:400}.stamp{background:rgba(16,11,26,.28);backdrop-filter:blur(8px);box-shadow:0 0 0 6px rgba(16,11,26,.12)}.distance-chip{position:absolute;z-index:4;right:25px;top:24px;padding:8px 12px;border:1px solid rgba(247,239,229,.2);border-radius:999px;background:rgba(16,11,26,.35);backdrop-filter:blur(8px);color:rgba(247,239,229,.8);font:600 .65rem ui-monospace,monospace;letter-spacing:.1em;text-transform:uppercase}
+    .question-card{overflow:hidden}.decorative-question{position:absolute!important;right:-8px;top:-70px;color:rgba(247,239,229,.035);font:italic 16rem/1 Georgia,serif}.question-card>*{position:relative}.choice{backdrop-filter:blur(6px)}
+    .letter{background:radial-gradient(circle at 90% 10%,rgba(232,189,114,.09),transparent 35%),linear-gradient(145deg,rgba(247,239,229,.09),rgba(207,147,170,.035));box-shadow:0 45px 120px rgba(0,0,0,.42),0 0 0 1px rgba(232,189,114,.04)}.letter-seal{position:absolute;right:clamp(25px,6vw,65px);top:clamp(28px,6vw,60px);display:grid;place-items:center;width:46px;aspect-ratio:1;border:1px solid rgba(232,189,114,.38);border-radius:50%;color:rgba(232,189,114,.62);font:italic 1.2rem Georgia,serif;box-shadow:0 0 0 4px rgba(232,189,114,.04)}.hindi{display:inline-block;padding-bottom:9px;border-bottom:1px solid rgba(232,189,114,.24)}.signature{position:relative;display:inline-block}.signature:after{content:"";position:absolute;left:0;right:-35px;bottom:-7px;height:1px;background:linear-gradient(90deg,var(--gold),transparent)}
+    @keyframes breathe{50%{opacity:.55;transform:scale(.86)}}
+    @media(max-width:760px){.intro:before{width:130vw}.intro:after{width:100vw}.landscape{min-height:610px;background-position:61% center}.distance-chip{right:16px;top:16px}.letter-seal{right:24px;top:28px}.terminal-meta{display:none}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
   </style>
 </head>
@@ -42,6 +52,7 @@
       <p class="intro-copy">You once said I should make you a birthday card using programming. I remembered.</p>
       <button class="run" id="run" type="button">Run birthday surprise</button>
       <p class="tiny">Best viewed with a little curiosity.</p>
+      <div class="scroll-note" aria-hidden="true">Chile · India</div>
     </div>
   </section>
 
@@ -49,7 +60,7 @@
     <section class="section terminal-section" aria-label="Birthday surprise initialization">
       <div class="wrap reveal">
         <div class="terminal">
-          <div class="terminal-bar"><i class="dot"></i><i class="dot"></i><i class="dot"></i><span class="terminal-title">birthday_surprise.sh</span></div>
+          <div class="terminal-bar"><i class="dot"></i><i class="dot"></i><i class="dot"></i><span class="terminal-meta">secure transmission · 14,000 km</span><span class="terminal-title">birthday_surprise.sh</span></div>
           <div class="terminal-body" id="terminal" aria-live="polite"><span class="cursor"></span></div>
         </div>
       </div>
@@ -57,6 +68,7 @@
 
     <section class="section">
       <div class="wrap wish-grid reveal">
+        <span class="decorative-number" aria-hidden="true">01</span>
         <div class="wish-copy">
           <div class="kicker">For the year ahead</div>
           <h2>More reasons to enjoy the little things.</h2>
@@ -73,7 +85,7 @@
     <section class="journey">
       <div class="wrap reveal">
         <div class="landscape" role="img" aria-label="A calm sea and distant mountains connected by a travel route">
-          <div class="moon"></div><div class="route"><span class="plane" aria-hidden="true">✦</span></div>
+          <div class="distance-chip">From Chile, with code</div><div class="moon"></div><div class="route"><span class="plane" aria-hidden="true">✦</span></div>
           <div class="scene-label"><h2>Beach or mountains?<br><em>Apparently, the answer is everywhere.</em></h2><div class="stamp">More places<br>to discover<br>20·26</div></div>
         </div>
       </div>
@@ -82,6 +94,7 @@
     <section class="section" id="question">
       <div class="wrap reveal">
         <div class="question-card">
+          <span class="decorative-question" aria-hidden="true">?</span>
           <div class="kicker">🥁 Birthday question of the day</div>
           <h2>One question had to be here.</h2>
           <p class="question">If you could choose one thing for this new year of your life, what would it be?</p>
@@ -100,6 +113,7 @@
     <section class="section letter-section">
       <div class="wrap reveal">
         <article class="letter">
+          <span class="letter-seal" aria-hidden="true">F</span>
           <p class="hindi" lang="hi">जन्मदिन मुबारक हो, Sanchi</p>
           <h2>For Sanchii,</h2>
           <p>I truly hope this coming year of your life brings you peace, pleasant surprises, new places, and more reasons to enjoy the little things.</p>
