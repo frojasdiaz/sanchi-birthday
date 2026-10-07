@@ -48,6 +48,10 @@
     .constellation{border-color:rgba(255,211,111,.3);background:linear-gradient(180deg,rgba(241,91,155,.36),rgba(48,193,190,.24));box-shadow:inset 0 0 75px rgba(210,167,237,.16),0 30px 80px rgba(35,8,50,.2)}
     .question-card{border-color:rgba(255,225,151,.36);background:linear-gradient(135deg,rgba(145,48,119,.82),rgba(39,115,135,.76));box-shadow:0 30px 85px rgba(40,8,55,.28),0 0 70px rgba(245,160,188,.1)}.choice{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.34)}.choice:hover,.choice.selected{background:rgba(255,211,111,.23)}
     .letter{border-color:rgba(255,218,133,.42);background:radial-gradient(circle at 90% 10%,rgba(255,211,111,.22),transparent 35%),linear-gradient(145deg,rgba(145,49,116,.92),rgba(38,102,130,.87));box-shadow:0 45px 120px rgba(38,8,52,.35),0 0 0 1px rgba(255,211,111,.13)}.toast{background:#6a286d}.footer{color:#d9bedc}
+    .words button{position:absolute;border:0;padding:8px;background:transparent;color:var(--muted);font:600 .72rem ui-monospace,monospace;letter-spacing:.12em;text-transform:uppercase;cursor:pointer;transition:color .25s,transform .25s,text-shadow .25s}.words button:hover,.words button:focus-visible,.words button.active{color:var(--gold);transform:scale(1.08);text-shadow:0 0 18px rgba(255,211,111,.7);outline:none}.words button:focus-visible{box-shadow:0 0 0 2px var(--teal);border-radius:6px}.words button:nth-child(1){top:13%;left:16%}.words button:nth-child(2){top:34%;right:8%}.words button:nth-child(3){bottom:22%;left:9%}.words button:nth-child(4){bottom:7%;right:18%}.words button:nth-child(5){top:48%;left:32%;color:var(--gold)}.constellation-note{position:absolute;z-index:2;left:50%;bottom:45%;width:76%;margin:0;transform:translate(-50%,50%);color:var(--ivory);font:italic .92rem/1.4 Georgia,serif;text-align:center;opacity:0;transition:opacity .3s,transform .3s;pointer-events:none}.constellation-note.show{opacity:1;transform:translate(-50%,42%)}
+    .travel-action{position:absolute;z-index:5;left:clamp(20px,6vw,70px);top:24px;border:1px solid rgba(255,255,255,.42);border-radius:999px;padding:10px 15px;color:var(--ivory);background:rgba(70,25,78,.5);backdrop-filter:blur(10px);font-weight:700;cursor:pointer;transition:transform .25s,background .25s}.travel-action:hover,.travel-action:focus-visible{transform:translateY(-2px);background:rgba(111,37,99,.72);outline:2px solid var(--gold);outline-offset:3px}.landscape.flying .plane{animation:fly-route 1.8s var(--ease) both}.landscape.flying .route{animation:route-glow 1.8s var(--ease)}.landscape.flying .stamp{animation:stamp-in .65s 1.25s var(--ease) both}@keyframes fly-route{0%{right:5%;transform:rotate(11deg) scale(1)}45%{right:48%;transform:translateY(-28px) rotate(-9deg) scale(1.25)}100%{right:94%;transform:translateY(2px) rotate(-18deg) scale(.85)}}@keyframes route-glow{50%{filter:drop-shadow(0 0 14px var(--gold));border-color:#fff3c7}}@keyframes stamp-in{0%{opacity:.2;transform:rotate(8deg) scale(1.35)}100%{opacity:1;transform:rotate(8deg) scale(1)}}
+    .letter-intro{text-align:center}.open-letter{margin:12px 0 5px;border:1px solid rgba(255,225,151,.52);border-radius:999px;padding:12px 18px;color:#3d1744;background:linear-gradient(135deg,#ffe58f,#ffb46f);font-weight:800;cursor:pointer;box-shadow:0 12px 35px rgba(255,161,93,.2);transition:transform .25s,box-shadow .25s}.open-letter:hover,.open-letter:focus-visible{transform:translateY(-2px);box-shadow:0 16px 45px rgba(255,161,93,.34);outline:2px solid var(--teal);outline-offset:3px}.letter-content{display:grid;grid-template-rows:0fr;opacity:0;transition:grid-template-rows .8s var(--ease),opacity .6s}.letter-content>div{overflow:hidden}.letter.open .letter-content{grid-template-rows:1fr;opacity:1}.letter.open .open-letter{display:none}.letter.open .letter-intro{margin-bottom:26px}.letter:not(.open) .letter-seal{position:relative;inset:auto;margin:0 auto 18px;width:58px}.letter:not(.open){padding-block:48px}.letter:not(.open):before{inset:10px}
+    @media(max-width:520px){.travel-action{top:65px;left:16px}.words button{font-size:.64rem}.words button:nth-child(5){left:27%}.constellation-note{width:68%;font-size:.83rem}.letter:not(.open){padding-block:38px}}
     @keyframes breathe{50%{opacity:.55;transform:scale(.86)}}
     @media(max-width:760px){.intro:before{width:130vw}.intro:after{width:100vw}.landscape{min-height:610px;background-position:61% center}.distance-chip{right:16px;top:16px}.letter-seal{right:24px;top:28px}.terminal-meta{display:none}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
@@ -87,15 +91,22 @@
         </div>
         <div class="constellation" aria-label="Sanchi's favorite things arranged like a constellation">
           <div class="orbit"></div>
-          <div class="words"><span>reading</span><span>painting</span><span>swimming</span><span>singing</span><span>world tour</span></div>
+          <div class="words">
+            <button type="button" data-note="More stories worth staying up for.">reading</button>
+            <button type="button" data-note="More blank pages turned into color.">painting</button>
+            <button type="button" data-note="More calm water and sunny days.">swimming</button>
+            <button type="button" data-note="More songs sung without overthinking it.">singing</button>
+            <button type="button" data-note="More stamps, stories, and places to remember.">world tour</button>
+          </div>
+          <p class="constellation-note" id="constellation-note" aria-live="polite">Tap a star.</p>
         </div>
       </div>
     </section>
 
     <section class="journey">
       <div class="wrap reveal">
-        <div class="landscape" role="img" aria-label="A calm sea and distant mountains connected by a travel route">
-          <div class="distance-chip">From Chile, with code</div><div class="moon"></div><div class="route"><span class="plane" aria-hidden="true">✦</span></div>
+        <div class="landscape" aria-label="A calm sea and distant mountains connected by a travel route">
+          <div class="distance-chip">From Chile, with code</div><button class="travel-action" id="travel-action" type="button">Send the journey ✦</button><div class="moon"></div><div class="route"><span class="plane" aria-hidden="true">✦</span></div>
           <div class="scene-label"><h2>Beach or mountains?<br><em>Apparently, the answer is everywhere.</em></h2><div class="stamp">More places<br>to discover<br>20·26</div></div>
         </div>
       </div>
@@ -124,14 +135,16 @@
       <div class="wrap reveal">
         <article class="letter">
           <span class="letter-seal" aria-hidden="true">F</span>
-          <p class="hindi" lang="hi">जन्मदिन मुबारक हो, Sanchi</p>
-          <h2>For Sanchii,</h2>
-          <p>I truly hope this coming year of your life brings you peace, pleasant surprises, new places, and more reasons to enjoy the little things.</p>
-          <p>I hope that whatever has felt difficult lately becomes a little lighter. Keep traveling. Keep painting, singing, reading, skating, asking questions... and planning that trip around the world.</p>
-          <p>Somewhere between your afternoon and my morning, our spontaneous conversations ended up bringing me joy.</p>
-          <p>And since you once asked me for a birthday card made with code, I had a promise to keep.</p>
-          <p>Happy birthday, Sanchi. I hope you feel that today is entirely yours.</p>
-          <p class="signature">— Felipe</p>
+          <div class="letter-intro"><p class="hindi" lang="hi">जन्मदिन मुबारक हो, Sanchi</p><h2>One last thing.</h2><button class="open-letter" type="button" aria-expanded="false">Open Felipe's note</button></div>
+          <div class="letter-content" aria-hidden="true"><div>
+            <h2>For Sanchii,</h2>
+            <p>I truly hope this coming year of your life brings you peace, pleasant surprises, new places, and more reasons to enjoy the little things.</p>
+            <p>I hope that whatever has felt difficult lately becomes a little lighter. Keep traveling. Keep painting, singing, reading, skating, asking questions... and planning that trip around the world.</p>
+            <p>Somewhere between your afternoon and my morning, our spontaneous conversations ended up bringing me joy.</p>
+            <p>And since you once asked me for a birthday card made with code, I had a promise to keep.</p>
+            <p>Happy birthday, Sanchi. I hope you feel that today is entirely yours.</p>
+            <p class="signature">— Felipe</p>
+          </div></div>
           <button class="secret" id="secret" type="button" aria-label="A tiny hidden surprise">✦</button>
         </article>
       </div>
@@ -160,6 +173,9 @@
       const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.16});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
       function confetti(){const colors=['#e8bd72','#cf93aa','#85c9c4','#e79b55','#f7efe5'];for(let i=0;i<34;i++){const s=document.createElement('i');s.className='spark';s.style.left=(50+(Math.random()-.5)*15)+'vw';s.style.top='58vh';s.style.background=colors[i%colors.length];s.style.setProperty('--x',(Math.random()-.5)*90+'vw');s.style.setProperty('--y',(20+Math.random()*42)+'vh');document.body.append(s);setTimeout(()=>s.remove(),1500)}}
       document.querySelectorAll('.choice').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.choice').forEach(b=>b.classList.remove('selected'));btn.classList.add('selected');document.querySelector('#answer').textContent=btn.dataset.answer;if(btn.dataset.correct&&!reduce)confetti()}));
+      const constellationNote=document.querySelector('#constellation-note');document.querySelectorAll('.words button').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.words button').forEach(b=>b.classList.remove('active'));btn.classList.add('active');constellationNote.textContent=btn.dataset.note;constellationNote.classList.add('show')}));
+      const landscape=document.querySelector('.landscape'),travelAction=document.querySelector('#travel-action');travelAction.addEventListener('click',()=>{landscape.classList.remove('flying');void landscape.offsetWidth;landscape.classList.add('flying');travelAction.textContent='Route set: everywhere ✓';setTimeout(()=>landscape.classList.remove('flying'),2100)});
+      const letter=document.querySelector('.letter'),openLetter=document.querySelector('.open-letter'),letterContent=document.querySelector('.letter-content');openLetter.addEventListener('click',()=>{letter.classList.add('open');openLetter.setAttribute('aria-expanded','true');letterContent.setAttribute('aria-hidden','false');if(!reduce)setTimeout(()=>confetti(),500)});
       const toast=document.querySelector('#toast');function showToast(text){toast.textContent=text;toast.classList.add('show');clearTimeout(showToast.t);showToast.t=setTimeout(()=>toast.classList.remove('show'),3000)}
       document.querySelector('#secret').addEventListener('click',()=>showToast('Partner in completely fictional crimes.'));
       let taps=0,timer;document.querySelector('.intro h1').addEventListener('click',()=>{taps++;clearTimeout(timer);timer=setTimeout(()=>taps=0,1400);if(taps===4){showToast('Zombie Sanchi detected. Please provide coffee.');taps=0}});
