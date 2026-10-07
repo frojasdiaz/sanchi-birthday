@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#100b1a">
+  <meta name="description" content="A promise made with code — a little birthday surprise for Sanchi.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="A little birthday surprise for Sanchi ✨">
+  <meta property="og:description" content="A promise made with code.">
+  <meta property="og:image" content="https://frojasdiaz.github.io/sanchi-birthday/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="A moonlit sea and mountain landscape for Sanchi's birthday">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="A little birthday surprise for Sanchi ✨">
+  <meta name="twitter:description" content="A promise made with code.">
+  <meta name="twitter:image" content="https://frojasdiaz.github.io/sanchi-birthday/og.png">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23100b1a'/%3E%3Cpath d='M32 10l3.8 14.2L50 28l-14.2 3.8L32 46l-3.8-14.2L14 28l14.2-3.8z' fill='%23e8bd72'/%3E%3Ccircle cx='48' cy='15' r='3' fill='%2385c9c4'/%3E%3C/svg%3E">
+  <title>Happy Birthday, Sanchi ✨</title>
+  <style>
+    :root{--ink:#100b1a;--ink2:#1b1027;--plum:#32162f;--rose:#cf93aa;--mauve:#aa83ba;--gold:#e8bd72;--ivory:#f7efe5;--muted:#c7b9c7;--teal:#85c9c4;--saffron:#e79b55;--line:rgba(247,239,229,.16);--ease:cubic-bezier(.2,.8,.2,1)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;background:var(--ink)}body{margin:0;color:var(--ivory);background:radial-gradient(circle at 20% 12%,rgba(120,49,100,.18),transparent 33rem),radial-gradient(circle at 90% 45%,rgba(40,103,111,.14),transparent 28rem),var(--ink);font:400 1rem/1.7 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;overflow-x:hidden}button{font:inherit}a{color:inherit}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    .stars,.stars:before,.stars:after{position:fixed;inset:0;pointer-events:none;z-index:0;background-repeat:repeat}.stars{opacity:.48;background-image:radial-gradient(circle,#fff 0 1px,transparent 1.2px);background-size:89px 89px}.stars:before,.stars:after{content:""}.stars:before{background-image:radial-gradient(circle,var(--gold) 0 1px,transparent 1.5px);background-size:151px 137px;transform:translate(33px,19px)}.stars:after{opacity:.35;background-image:radial-gradient(circle,var(--teal) 0 1px,transparent 1.4px);background-size:211px 193px;transform:translate(-61px,77px)}
+    .intro{position:fixed;inset:0;z-index:50;display:grid;place-items:center;padding:24px;background:radial-gradient(circle at 50% 35%,#321630 0,#160d21 42%,#0d0915 100%);transition:opacity .9s var(--ease),visibility .9s}.intro.open{opacity:0;visibility:hidden}.intro-inner{text-align:center;max-width:640px}.eyebrow{margin:0 0 18px;color:var(--gold);font:600 .72rem/1.2 ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.22em;text-transform:uppercase}.intro h1{margin:0;font:400 clamp(2.9rem,12vw,6.5rem)/.94 Georgia,"Times New Roman",serif;letter-spacing:-.055em}.intro h1 span{display:block;margin-top:.16em;color:var(--rose);font-size:.66em;font-style:italic}.intro-copy{max-width:450px;margin:25px auto 32px;color:var(--muted)}.run{position:relative;border:1px solid rgba(232,189,114,.55);border-radius:999px;padding:15px 23px;color:#17101e;background:linear-gradient(135deg,#f0d399,#dca866);font-weight:700;cursor:pointer;box-shadow:0 15px 45px rgba(232,189,114,.18);transition:transform .25s,box-shadow .25s}.run:hover,.run:focus-visible{transform:translateY(-2px);box-shadow:0 18px 55px rgba(232,189,114,.3)}.run:focus-visible,.choice:focus-visible,.secret:focus-visible{outline:3px solid var(--teal);outline-offset:4px}.tiny{margin-top:18px;color:#8f8192;font-size:.76rem;letter-spacing:.05em}
+    main{position:relative;z-index:1;opacity:0;transition:opacity .6s}body.started main{opacity:1}.wrap{width:min(1100px,calc(100% - 36px));margin-inline:auto}.section{min-height:88svh;display:grid;align-items:center;padding:90px 0}.reveal{opacity:0;transform:translateY(26px);transition:opacity .85s var(--ease),transform .85s var(--ease)}.reveal.visible{opacity:1;transform:none}.kicker{display:flex;align-items:center;gap:10px;color:var(--gold);font:600 .72rem/1.2 ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.18em;text-transform:uppercase}.kicker:before{content:"";width:27px;height:1px;background:var(--gold)}h2{margin:.55rem 0 1rem;font:400 clamp(2.4rem,8vw,5.4rem)/1.02 Georgia,"Times New Roman",serif;letter-spacing:-.04em}p{margin:.7rem 0;color:var(--muted)}
+    .terminal-section{padding-top:70px}.terminal{max-width:810px;margin:auto;border:1px solid var(--line);border-radius:18px;background:rgba(15,9,24,.8);box-shadow:0 35px 90px rgba(0,0,0,.38);overflow:hidden;backdrop-filter:blur(18px)}.terminal-bar{display:flex;align-items:center;gap:8px;padding:14px 18px;border-bottom:1px solid var(--line);background:rgba(255,255,255,.025)}.dot{width:9px;height:9px;border-radius:50%;background:#71404f}.dot:nth-child(2){background:#8a6a41}.dot:nth-child(3){background:#426d65}.terminal-title{margin-left:auto;color:#7f7183;font:500 .68rem ui-monospace,monospace;letter-spacing:.08em}.terminal-body{min-height:410px;padding:24px 22px 30px;font:500 clamp(.78rem,2.8vw,.95rem)/1.9 ui-monospace,SFMono-Regular,Consolas,monospace;color:#cfc2d3}.term-line{min-height:1.9em}.prompt{color:var(--teal)}.ok{color:var(--gold)}.warn{color:var(--rose)}.status{display:inline-block;margin-top:12px;padding:3px 9px;border:1px solid rgba(133,201,196,.25);border-radius:4px;color:var(--teal);letter-spacing:.08em}.cursor{display:inline-block;width:8px;height:1.1em;margin-left:3px;vertical-align:-.17em;background:var(--gold);animation:blink 1s steps(1) infinite}@keyframes blink{50%{opacity:0}}
+    .wish-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:26px;align-items:end}.wish-copy{max-width:680px}.wish-copy .lead{color:var(--ivory);font:400 clamp(1.28rem,3vw,1.62rem)/1.6 Georgia,serif}.constellation{position:relative;min-height:390px;border:1px solid var(--line);border-radius:999px 999px 28px 28px;background:linear-gradient(180deg,rgba(172,87,137,.13),rgba(17,61,70,.08));overflow:hidden}.orbit{position:absolute;inset:50% auto auto 50%;width:230px;height:230px;border:1px solid rgba(232,189,114,.18);border-radius:50%;transform:translate(-50%,-50%)}.orbit:before,.orbit:after{content:"";position:absolute;width:7px;height:7px;border-radius:50%;background:var(--gold);box-shadow:0 0 15px var(--gold)}.orbit:before{left:7%;top:22%}.orbit:after{right:9%;bottom:17%}.words{position:absolute;inset:0}.words span{position:absolute;color:var(--muted);font:500 .72rem ui-monospace,monospace;letter-spacing:.12em;text-transform:uppercase}.words span:nth-child(1){top:16%;left:20%}.words span:nth-child(2){top:37%;right:12%}.words span:nth-child(3){bottom:25%;left:13%}.words span:nth-child(4){bottom:10%;right:23%}.words span:nth-child(5){top:52%;left:38%;color:var(--gold)}
+    .journey{padding-block:105px}.landscape{position:relative;min-height:550px;border:1px solid var(--line);border-radius:28px;overflow:hidden;background:linear-gradient(180deg,#21132f 0%,#322143 42%,#b87673 43%,#e5a96c 51%,#216674 52%,#123a4a 100%);box-shadow:0 35px 80px rgba(0,0,0,.28)}.landscape:before{content:"";position:absolute;left:-5%;bottom:41%;width:58%;height:39%;background:#181329;clip-path:polygon(0 100%,20% 54%,36% 76%,53% 27%,69% 70%,85% 14%,100% 100%)}.landscape:after{content:"";position:absolute;inset:52% 0 auto;height:1px;background:rgba(255,255,255,.34);box-shadow:0 17px 35px rgba(232,189,114,.3)}.moon{position:absolute;right:14%;top:12%;width:72px;height:72px;border-radius:50%;background:var(--gold);box-shadow:0 0 40px rgba(232,189,114,.3)}.moon:after{content:"";position:absolute;width:72px;height:72px;border-radius:50%;background:#271634;transform:translate(17px,-7px)}.route{position:absolute;z-index:2;left:15%;right:12%;bottom:27%;height:110px;border-bottom:2px dashed rgba(247,239,229,.75);border-radius:50%;transform:rotate(-4deg)}.plane{position:absolute;right:5%;bottom:-2px;color:var(--ivory);font-size:1.35rem;transform:rotate(11deg)}.scene-label{position:absolute;z-index:3;left:clamp(20px,6vw,70px);right:clamp(20px,6vw,70px);bottom:34px;display:flex;justify-content:space-between;align-items:end;gap:20px}.scene-label h2{max-width:620px;margin:0;font-size:clamp(2rem,6vw,4.3rem)}.stamp{display:grid;place-items:center;width:105px;aspect-ratio:1;border:1px solid rgba(247,239,229,.55);border-radius:50%;color:var(--ivory);font:700 .67rem/1.45 ui-monospace,monospace;letter-spacing:.12em;text-align:center;text-transform:uppercase;transform:rotate(8deg)}
+    .question-card{position:relative;max-width:900px;margin:auto;padding:clamp(25px,6vw,62px);border:1px solid var(--line);border-radius:28px;background:linear-gradient(145deg,rgba(76,32,72,.48),rgba(18,45,53,.28));box-shadow:0 30px 80px rgba(0,0,0,.25)}.question-card h2{font-size:clamp(2.1rem,6vw,4.1rem)}.question{max-width:720px;color:var(--ivory);font:400 clamp(1.15rem,3.3vw,1.55rem)/1.5 Georgia,serif}.choices{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}.choice{border:1px solid rgba(247,239,229,.25);border-radius:999px;padding:12px 17px;background:rgba(255,255,255,.035);color:var(--ivory);cursor:pointer;transition:.25s}.choice:hover,.choice.selected{border-color:var(--gold);background:rgba(232,189,114,.12);transform:translateY(-2px)}.answer{min-height:38px;margin-top:20px;color:var(--gold);font-weight:650}.spark{position:fixed;z-index:100;width:7px;height:12px;border-radius:2px;pointer-events:none;animation:fall 1.4s var(--ease) forwards}@keyframes fall{to{transform:translate(var(--x),var(--y)) rotate(480deg);opacity:0}}
+    .letter-section{padding-bottom:120px}.letter{position:relative;max-width:790px;margin:auto;padding:clamp(30px,7vw,75px);border:1px solid rgba(232,189,114,.22);border-radius:4px 34px 4px 34px;background:linear-gradient(145deg,rgba(247,239,229,.075),rgba(207,147,170,.035));box-shadow:0 35px 100px rgba(0,0,0,.3)}.letter:before{content:"";position:absolute;inset:12px;border:1px solid rgba(247,239,229,.07);border-radius:2px 25px 2px 25px;pointer-events:none}.hindi{color:var(--gold);font-size:1.08rem}.letter h2{margin-top:.35rem}.letter p{font-size:1.05rem;line-height:1.85}.signature{margin-top:35px!important;color:var(--ivory)!important;font:italic 1.5rem Georgia,serif!important}.secret{position:absolute;right:18px;bottom:14px;border:0;padding:10px;background:none;color:rgba(247,239,229,.2);cursor:pointer}.toast{position:fixed;z-index:80;left:50%;bottom:22px;max-width:calc(100% - 32px);padding:11px 17px;border:1px solid var(--line);border-radius:999px;background:#21142d;color:var(--ivory);font-size:.82rem;box-shadow:0 12px 40px rgba(0,0,0,.35);transform:translate(-50%,30px);opacity:0;transition:.35s;pointer-events:none}.toast.show{transform:translate(-50%,0);opacity:1}.footer{padding:0 20px 35px;text-align:center;color:#756879;font:500 .7rem ui-monospace,monospace;letter-spacing:.1em}
+    @media(max-width:760px){.section{min-height:auto;padding:95px 0}.terminal-section{min-height:100svh}.wish-grid{grid-template-columns:1fr}.constellation{min-height:330px}.landscape{min-height:530px}.scene-label{display:block}.stamp{width:82px;margin-top:24px}.letter-section{padding-bottom:90px}}@media(max-width:420px){.wrap{width:min(100% - 26px,1100px)}.terminal-body{padding-inline:16px}.terminal-title{display:none}.choices{display:grid}.choice{text-align:left}.landscape{border-radius:20px}.route{left:5%;right:4%}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
+  </style>
+</head>
+<body>
+  <div class="stars" aria-hidden="true"></div>
+  <section class="intro" aria-labelledby="intro-title">
+    <div class="intro-inner">
+      <p class="eyebrow">One promise · now in production</p>
+      <h1 id="intro-title">A little thing I promised someone…<span>Happy Birthday, Sanchi.</span></h1>
+      <p class="intro-copy">You once said I should make you a birthday card using programming. I remembered.</p>
+      <button class="run" id="run" type="button">Run birthday surprise</button>
+      <p class="tiny">Best viewed with a little curiosity.</p>
+    </div>
+  </section>
+
+  <main>
+    <section class="section terminal-section" aria-label="Birthday surprise initialization">
+      <div class="wrap reveal">
+        <div class="terminal">
+          <div class="terminal-bar"><i class="dot"></i><i class="dot"></i><i class="dot"></i><span class="terminal-title">birthday_surprise.sh</span></div>
+          <div class="terminal-body" id="terminal" aria-live="polite"><span class="cursor"></span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap wish-grid reveal">
+        <div class="wish-copy">
+          <div class="kicker">For the year ahead</div>
+          <h2>More reasons to enjoy the little things.</h2>
+          <p class="lead">I hope this new year brings you more peace, more places to discover, and exactly the right amount of adventure.</p>
+          <p>The safe and fun kind, obviously. Staying alive remains a core feature.</p>
+        </div>
+        <div class="constellation" aria-label="Sanchi's favorite things arranged like a constellation">
+          <div class="orbit"></div>
+          <div class="words"><span>reading</span><span>painting</span><span>swimming</span><span>singing</span><span>world tour</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="journey">
+      <div class="wrap reveal">
+        <div class="landscape" role="img" aria-label="A calm sea and distant mountains connected by a travel route">
+          <div class="moon"></div><div class="route"><span class="plane" aria-hidden="true">✦</span></div>
+          <div class="scene-label"><h2>Beach or mountains?<br><em>Apparently, the answer is everywhere.</em></h2><div class="stamp">More places<br>to discover<br>20·26</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="question">
+      <div class="wrap reveal">
+        <div class="question-card">
+          <div class="kicker">🥁 Birthday question of the day</div>
+          <h2>One question had to be here.</h2>
+          <p class="question">If you could choose one thing for this new year of your life, what would it be?</p>
+          <div class="choices" role="group" aria-label="Choose a birthday wish">
+            <button class="choice" type="button" data-answer="A very good choice. Quietly underrated, too.">Peace</button>
+            <button class="choice" type="button" data-answer="Approved — provided safe adventure mode stays on.">Adventures</button>
+            <button class="choice" type="button" data-answer="There is always room for more of that.">Love</button>
+            <button class="choice" type="button" data-answer="A world tour should cover this nicely.">New experiences</button>
+            <button class="choice" type="button" data-correct="true" data-answer="Correct answer. No notes.">Why should I choose? I want everything.</button>
+          </div>
+          <p class="answer" id="answer" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section letter-section">
+      <div class="wrap reveal">
+        <article class="letter">
+          <p class="hindi" lang="hi">जन्मदिन मुबारक हो, Sanchi</p>
+          <h2>For Sanchii,</h2>
+          <p>I genuinely hope this next year of your life brings you peace, good surprises, new places, and more reasons to enjoy the little things.</p>
+          <p>I hope the things that have felt difficult lately become a little lighter. Keep traveling. Keep painting, singing, reading, skating, asking questions — and planning that world tour.</p>
+          <p>Somewhere between your evening and my morning, our random conversations somehow became part of my days. I enjoy them more than I probably say.</p>
+          <p>And since you once asked me for a birthday card made with code, I had a promise to keep.</p>
+          <p>Happy Birthday, Sanchi. I hope today feels entirely yours.</p>
+          <p class="signature">— Felipe</p>
+          <button class="secret" id="secret" type="button" aria-label="A tiny hidden surprise">✦</button>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">DESIGNED ACROSS 14,000 KM · TECHNICAL SUPPORT: FELIPE</footer>
+  <div class="toast" id="toast" role="status"></div>
+  <script>
+    (()=>{
+      const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const intro=document.querySelector('.intro'),run=document.querySelector('#run'),terminal=document.querySelector('#terminal');
+      const lines=[
+        '<span class="prompt">$</span> initializing birthday_surprise...',
+        '<span class="ok">✓</span> recipient detected: Sanchi',
+        '<span class="ok">✓</span> daily_questions module loaded',
+        '<span class="ok">✓</span> world_tour dream found',
+        '<span class="ok">✓</span> safe_adventure_mode enabled',
+        '<span class="warn">!</span> bank_robbery.exe blocked for legal reasons',
+        '<span class="ok">✓</span> distance.exe: still annoying',
+        '<span class="ok">✓</span> coded_birthday_card promise found',
+        '<span class="ok">✓</span> promise status: FULFILLED',
+        '<span class="status">STATUS: TODAY BELONGS TO SANCHI</span>'
+      ];
+      function typeTerminal(){terminal.innerHTML='';let i=0;const next=()=>{if(i>=lines.length){terminal.insertAdjacentHTML('beforeend','<span class="cursor"></span>');return}const d=document.createElement('div');d.className='term-line';d.innerHTML=lines[i++];terminal.appendChild(d);if(!reduce)terminal.scrollTop=terminal.scrollHeight;setTimeout(next,reduce?0:i===1?520:260)};next()}
+      run.addEventListener('click',()=>{document.body.classList.add('started');intro.classList.add('open');setTimeout(()=>{typeTerminal();document.querySelector('.terminal-section').scrollIntoView({behavior:reduce?'auto':'smooth'})},reduce?0:650)});
+      const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.16});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+      function confetti(){const colors=['#e8bd72','#cf93aa','#85c9c4','#e79b55','#f7efe5'];for(let i=0;i<34;i++){const s=document.createElement('i');s.className='spark';s.style.left=(50+(Math.random()-.5)*15)+'vw';s.style.top='58vh';s.style.background=colors[i%colors.length];s.style.setProperty('--x',(Math.random()-.5)*90+'vw');s.style.setProperty('--y',(20+Math.random()*42)+'vh');document.body.append(s);setTimeout(()=>s.remove(),1500)}}
+      document.querySelectorAll('.choice').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.choice').forEach(b=>b.classList.remove('selected'));btn.classList.add('selected');document.querySelector('#answer').textContent=btn.dataset.answer;if(btn.dataset.correct&&!reduce)confetti()}));
+      const toast=document.querySelector('#toast');function showToast(text){toast.textContent=text;toast.classList.add('show');clearTimeout(showToast.t);showToast.t=setTimeout(()=>toast.classList.remove('show'),3000)}
+      document.querySelector('#secret').addEventListener('click',()=>showToast('Partner in completely fictional crimes.'));
+      let taps=0,timer;document.querySelector('.intro h1').addEventListener('click',()=>{taps++;clearTimeout(timer);timer=setTimeout(()=>taps=0,1400);if(taps===4){showToast('Zombie Sanchi detected. Please provide coffee.');taps=0}});
+    })();
+  </script>
+</body>
+</html>
